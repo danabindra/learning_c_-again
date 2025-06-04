@@ -11,3 +11,18 @@ I’m not trying to become a C wizard. I just want to know enough to:
 - Connect it back to real GPU workloads running on things like Slurm or Kubernetes
 
 If you’re also learning C from a systems/infra/devops perspective, please comment on resources you may know
+
+## What I'm Trying to Learn
+
+- How C talks to RDMA via `libibverbs` and `librdmacm`
+- How to post sends and writes to a queue pair (QP)
+- What rkeys and memory regions really are
+- How RoCEv2 behaves under pressure (MTU, ECN, PFC)
+- How to collect meaningful benchmarks in a GPU DC
+
+## Build + Run
+
+### apt packages
+
+```bash
+sudo apt install rdma-core libibverbs-dev librdmacm-dev
